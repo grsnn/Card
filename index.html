@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="card__pizza">
+            <div class="card__pizza__header">
+                <img src="image/demo-1.jpg" class="pizza__img" alt="">
+                <div class="pizza__icons">
+                    <div class="pizza__icons__item search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="pizza__icons__item heart" id="heart">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Pizza salami</h2>
+                <p class="cart__descriptions">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam mollitia consequatur!
+                </p>
+                <div class="pizza__size">
+                    <button class="pizza__size__btn active" id="onePizza">25cm</button>
+                    <button class="pizza__size__btn" id="twoPizza">30cm</button>
+                    <button class="pizza__size__btn" id="threePizza">40cm</button>
+                </div>
+                <h5 class="pizza__precio" id="total">Q. 40.44</h5>
+                <div class="pizza__amount">
+                    <div class="amount">
+                        <i class="fas fa-minus" id="diminish"></i>
+                        <input class="number" value="1" disabled id="inputNumber">
+                        <i class="fas fa-plus" id="increase"></i>
+                    </div>
+                    <button class="pizza__btn__Add"><i class="fas fa-cart-plus"></i>ADD</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
